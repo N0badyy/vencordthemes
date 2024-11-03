@@ -35,14 +35,18 @@
 	--text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
 
 	/* background and dark colors */
-	--bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-	--bg-2: hsl(220, 15%, 16%); /* dark buttons */
-	--bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-	--bg-4: hsl(220, 15%, 10%); /* main background color */
+	--bg-1: hsl(221, 16%, 20%);
+	/* color of dark buttons */
+	--bg-2: hsl(220, 15%, 16%);
+	/* color of spacing around panels and secondary elements */
+	--bg-3: hsl(300, 5%, 4%);
+	/* main background color */
+	--bg-4: hsla(0, 0%, 2%, 0.274);
+	background-image: url("https://images.radio.com/aiu-media/billie-4d440562-a098-4a5e-83b5-f881c7c95876.jpg");
 	--hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
 	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
 	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
-
+	
 	/* amount of spacing and padding */
 	--spacing: 12px;
 
@@ -967,9 +971,9 @@ html.theme-light,
 	--background-modifier-selected: var(--active);
 	--background-nested-floating: var(--primary-630);
 	--background-primary: var(--bg-4);
-	--background-secondary: var(--bg-3);
+	--background-secondary: var(--bg-4);
 	--background-secondary-alt: var(--bg-3);
-	--background-tertiary: var(--bg-3);
+	--background-tertiary: var(--bg-4);
 	--bg-backdrop: hsl(var(--black-500-hsl) / 0.7);
 	--bg-backdrop-no-opacity: var(--black-500);
 	--bg-base-primary: var(--primary-600);

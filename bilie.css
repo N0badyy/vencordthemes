@@ -65,7 +65,7 @@
 	/* change to block to show, none to hide */
 	--discord-icon: none; /* discord icon */
 	--moon-icon: block; /* moon icon */
-	--moon-icon-url: url('https://cdn.discordapp.com/attachments/1275760212565032990/1302632645364285481/Billie-Eilish-green-logo-removebg-preview.png?ex=6728d2b0&is=67278130&hm=7d5e8290113f7a459f13a26a6667198352ce9fb0208035c0612cd9866553b33f&'); /* custom icon url */
+	--moon-icon-url: url('https://raw.githubusercontent.com/N0badyy/vencordthemes/refs/heads/main/Billie-Eilish-green-logo-removebg-preview.svg'); /* custom icon url */
 	--moon-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */

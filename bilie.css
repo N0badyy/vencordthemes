@@ -65,7 +65,7 @@
 	/* change to block to show, none to hide */
 	--discord-icon: none; /* discord icon */
 	--moon-icon: block; /* moon icon */
-	--moon-icon-url: url('https://github.com/N0badyy/vencordthemes/blob/12e1ea325194c08f13d45b07a639a7e527262bdd/Billie-Eilish-green-logo-removebg-preview.png'); /* custom icon url */
+	--moon-icon-url: url('https://raw.githubusercontent.com/N0badyy/vencordthemes/refs/heads/main/Billie-Eilish-green-logo-removebg-preview.png'); /* custom icon url */
 	--moon-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */

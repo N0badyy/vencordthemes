@@ -22,6 +22,16 @@ body {
     --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 + 2px);
 
     /* panel separation */
+    .gradientBackground__11664 {
+    background-color: var(--bg-4);
+    contain: layout style size;
+    filter: blur(100px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    } /* call background thing */
     .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
     .panels_c48ade /* user panel */,

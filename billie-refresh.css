@@ -583,7 +583,7 @@ body {
         --autocomplete-bg: var(--bg-3);
 
         --background-accent: var(--bg-2);
-        --background-floating: var(--bg-3);
+        --background-floating: var(--bg-2);
         --background-nested-floating: var(--bg-4);
         --background-mentioned: var(--mention);
         --background-mentioned-hover: var(--mention-hover);

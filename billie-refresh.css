@@ -825,7 +825,7 @@ body {
         }
 
         .folder__48112[aria-expanded="false"] > .folderIconWrapper__48112 /* collapsed folders */ {
-            --background-primary: var(--bg-4);
+            --background-primary: var(--bg-3);
         }
 
         .panel__5dec7 /* game activity panel */,

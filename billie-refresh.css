@@ -31,14 +31,41 @@ body {
         top: 0;
         width: 100%;
     }  */
-    .container__5aa3a {
-        background-color: var(--bg-4);
+    .artContainer_a55fdc {
+        height: 0;
+        width: 0;
+        
+    }
+    .container_a55fdc{
+        background: var(--bg-4);
+    }
+    .root_bfe55a {
+        background: var(--bg-4);
+    }
+    .callContainer_cb9592 {
+        background: var(--bg-4);
+        --bg5: hsla(0, 0%, 2%, 0.185);
+        --bg-mod-faint: var(--bg-5);
+        --bg-mod-subtle: var(--bg-5);
+        --bg-mod-strong: var(--bg-5);
+    }
+    .gradientBackground__11664 {
+        background: var(--bg-4);
+        
+        
         height: 0%;
+        left: 0;
+        background-color: none;
+        top: 0;
         width: 0%;
-        justify-content: center;
-        overflow: hidden;
-        position: relative
-    },
+    }
+    
+    .sphere__11664 {
+        opacity: 0%;
+    }
+    .inner_c0bea0 biteSize_c0bea0 {
+        --background-surface-high: var(--bg-2);
+    } 
     .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
     .panels_c48ade /* user panel */,

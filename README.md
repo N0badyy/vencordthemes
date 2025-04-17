@@ -18,9 +18,9 @@ Each theme lives inside the `./themes/` folder. You can download them individual
 ## 🛠 How to Use
 
 To apply a theme:
-1. Install [BetterDiscord](https://betterdiscord.app).
+1. Install [Vencord](https://vencord.dev).
 2. Download any `.theme.css` file from the `/themes` folder.
-3. Move it into your BetterDiscord themes folder.
+3. Move it into your Vencord themes folder.
 4. Enable it in the client.
 
 ---
@@ -35,10 +35,4 @@ To apply a theme:
 
 ---
 
-## 🧠 Auto-generate Themes List
 
-To keep the list in `themes.html` up-to-date, run this script:
-
-```bash
-node generateThemes.js
-```

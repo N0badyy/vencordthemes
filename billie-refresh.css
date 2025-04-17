@@ -37,7 +37,7 @@ body {
         justify-content: center;
         overflow: hidden;
         position: relative
-    }
+    },
     .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
     .panels_c48ade /* user panel */,

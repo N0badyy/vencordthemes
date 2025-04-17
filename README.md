@@ -1,4 +1,44 @@
-This is a customization of the theme "midnight" by refact0r with some of my own fixes so i dont claim copyrights for this.
+# 🌙 Midnight Theme (Customized)
 
-Original's Author Website: https://www.refact0r.dev
-Midnight Github: https://github.com/refact0r/midnight-discord
+This is a personal customization of the [Midnight theme by refact0r](https://github.com/refact0r/midnight-discord) with some of my own tweaks and fixes. I do **not** claim any copyright on the original.
+
+> Original Author: [refact0r](https://www.refact0r.dev)  
+> Original Theme: [Midnight on GitHub](https://github.com/refact0r/midnight-discord)
+
+---
+
+## 🎨 My Custom Themes
+
+Browse and download my Discord themes directly on the [GitHub Pages Site](https://yourusername.github.io/your-repo-name)!
+
+Each theme lives inside the `./themes/` folder. You can download them individually or clone the whole repo.
+
+---
+
+## 🛠 How to Use
+
+To apply a theme:
+1. Install [BetterDiscord](https://betterdiscord.app).
+2. Download any `.theme.css` file from the `/themes` folder.
+3. Move it into your BetterDiscord themes folder.
+4. Enable it in the client.
+
+---
+
+## 🌐 Website Structure
+
+- `index.html` — Homepage
+- `about.html` — Project info and credits
+- `themes.html` — Auto-generated list of themes
+- `/themes/` — Your theme files (custom .theme.css files)
+- `generateThemes.js` — Node.js script to regenerate the theme list
+
+---
+
+## 🧠 Auto-generate Themes List
+
+To keep the list in `themes.html` up-to-date, run this script:
+
+```bash
+node generateThemes.js
+```

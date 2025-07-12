@@ -26,7 +26,9 @@ body {
 }
 
 .visual-refresh {
-    /*channel status img */
+    /* panel separation */
+/*channel status img */
+    /* --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 + 2px); */
     .headerImage__08bd2 {
     background-image: none;
     height:0px;     
@@ -43,7 +45,7 @@ body {
     
     /* panel separation */
     
-    --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 + 2px);
+    
 
     /* panel separation */
 /*     .gradientBackground__11664 {
@@ -1845,4 +1847,3 @@ body {
         }
     }
 }
-

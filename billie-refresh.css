@@ -46,7 +46,9 @@ body {
     /* panel separation */
     
     
-
+    --blurple-50: var(--accent-2);
+    --blurple-60: var(--accent-4);
+    --blurple-65: var(--accent-5);
     /* panel separation */
 /*     .gradientBackground__11664 {
         background-color: var(--bg-4);
@@ -1050,9 +1052,7 @@ body {
 
         --brand-360: var(--accent-2);
         --brand-500: var(--accent-2);
-        --blurple-50: var(--accent-2);
-        --blurple-60: var(--accent-4);
-        --blurple-65: var(--accent-5);
+        
         --red-400: var(--red-2);
         --red-500: var(--red-3);
 

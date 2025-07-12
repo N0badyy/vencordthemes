@@ -154,16 +154,12 @@ body {
     }
     .scroller_ef3116 /* server list inner scroller */ {
         padding: var(--custom-guild-list-padding) 0;
-        align-items: center;
     }
-    .tree_ef3116 {
-        align-items: center;
+    .folderGroup__48112 {
+        width: 100%;
     }
-    .stack_dbd263[data-align=stretch] /* server list inner inner */ {
-        align-items: center;
-    }
-    .expandedFolderBackground__48112 {
-        left: calc(var(--custom-guild-list-padding) - (var(--guildbar-folder-size) - var(--guildbar-avatar-size)) / 2 + var(--border-thickness));
+    .listItem__650eb {
+        width: 100%;
     }
 
     .sidebarList_c48ade /* channel list */ {
@@ -245,13 +241,13 @@ body {
         margin-left: var(--gap);
         overflow: hidden;
         height: auto;
-        min-width: var(--custom-member-list-width);
-        max-width: var(--custom-member-list-width);
+        min-width: fit-content;
     }
     .content_f75fb0 > .membersWrap_c8ffbb /* forum post member list */ {
         margin-left: var(--gap);
         overflow: hidden;
         height: auto;
+        min-width: fit-content;
     }
     .members_c8ffbb /* member list inner */,
     .member_c8ffbb /* member list item */ {
@@ -305,6 +301,8 @@ body {
         overflow: hidden;
         height: auto;
         min-width: 340px;
+        background-position: center calc(-1 * var(--border-thickness));
+        background-size: 100% calc(100% + 2 * var(--border-thickness));
     }
 
     .searchResultsWrap_a9e706 /* search results */ {
@@ -390,8 +388,9 @@ body {
         padding: 0 8px;
     }
 
-    .bottom__7aaec /* channel list new unreads pill */ {
-        bottom: 0px;
+    .bottom__7aaec /* channel list new unreads pill */,
+    .unreadBottom__629e4 /* channel list non-community unread pill */ {
+        bottom: 0;
     }
 
     .unreadMentionsIndicatorBottom_ef3116 /* server list new pill */,
@@ -489,6 +488,8 @@ body {
 
     .outer_c0bea0 /* profile outer */ {
         border: 1px solid var(--border-subtle);
+        background-position: center calc(-1 * var(--border-thickness));
+        background-size: 100% calc(100% + 2 * var(--border-thickness));
     }
     .root__24502 {
         background: none;
@@ -597,7 +598,7 @@ body {
     .visual-refresh {
         .form_f75fb0 {
             margin: 0 var(--chatbar-padding) var(--chatbar-padding) var(--chatbar-padding);
-            padding: 0;
+            padding: 0 !important;
             --chatbar-border-color: var(--border-faint);
         }
         .channelTextArea_f75fb0 {
@@ -993,7 +994,7 @@ body {
         --text-feedback-critical: var(--red-1);
         --text-feedback-positive: var(--green-1);
         --text-feedback-info: red;
-        --text-feedback-warning: red;
+        --text-feedback-warning: var(--yellow-1);
         --text-tertiary: var(--text-4);
 
         --user-profile-overlay-background: var(--bg-4);
@@ -1054,11 +1055,20 @@ body {
 
         --green-360: var(--green-2); /* seems to be mostly used by vencord plugins */
         --primary-400: var(--text-4);
+
+        --deprecated-text-input-bg: var(--bg-3);
+        --deprecated-text-input-border: var(--border-light);
+
+        --background-code: var(--bg-3);
     }
 
     .visual-refresh {
         ::placeholder {
             color: var(--text-5);
+        }
+
+        .bg__960e4 /* main background */ {
+            background: var(--bg-3);
         }
 
         .modeUnreadImportant__2ea32 .icon__2ea32,
@@ -1090,7 +1100,8 @@ body {
         .quickSelectPopout_ebaca5 /* dm vc region select popout */,
         .participantsButton__211d1 /* vc participants button */,
         .voiceBar__7aaec /* n in voice bar (channel list) */,
-        .mainCard_f369db /* form posts */ {
+        .mainCard_f369db /* form posts */,
+        .accountProfileCard__1fed1 /* account settings profile background */ {
             background-color: var(--bg-3);
         }
 
@@ -1166,7 +1177,8 @@ body {
         .bottomControls_e4cb9a /* stream preview viewer number */,
         .pictureInPictureVideo_e4cb9a .controlIcon_f1ceac /* stream preview control icon */,
         .bannerVisible_f37cb1 .name_f37cb1 /* server name over banner image */,
-        .dropdownButtonBannerVisible__2637a /* server name over banner dropdown button */ {
+        .dropdownButtonBannerVisible__2637a /* server name over banner dropdown button */,
+        .mediaMosaicAltText__0f481 /* image alt text label */ {
             color: var(--text-1);
         }
         .headerText_e4cb9a.base_eb1a4c /* stream preview header text */,
@@ -1230,6 +1242,11 @@ body {
 
         .iconBadge__650eb.isCurrentUserConnected__650eb /* green vc badge when connected */ {
             color: var(--text-0);
+        }
+
+        .lookOutlined__201d5.colorWhite__201d5 /* outline buttons */ {
+            border-color: var(--text-5);
+            color: var(--text-3);
         }
 
         .container__37e49 /* user panel buttons */,
@@ -1312,30 +1329,30 @@ body {
         rect[fill='#82838b'] {
             fill: var(--offline);
         }
-        .status_a423bd[style='background-color: rgb(131, 131, 139);'] {
+        .status_a423bd[style='background-color: rgb(130, 131, 139);'] {
             background-color: var(--offline) !important;
         }
-        rect[fill='#40a258'],
-        path[fill='#40a258'] /* status activity icon */,
+        rect[fill='#43a25a'],
+        path[fill='#43a25a'] /* status activity icon */,
         path[fill='var(--status-positive)'] /* status activity icon */,
-        .vc-platform-indicator > svg[fill="#40a258"] {
+        .vc-platform-indicator > svg[fill="#43a25a"] {
             fill: var(--online);
         }
-        .status_a423bd[style='background-color: rgb(64, 162, 88);'] {
+        .status_a423bd[style='background-color: rgb(67, 162, 90);'] {
             background-color: var(--online) !important;
         }
-        rect[fill='#cc954c'],
-        .vc-platform-indicator > svg[fill='#cc954c'] {
+        rect[fill='#ca9654'],
+        .vc-platform-indicator > svg[fill='#ca9654'] {
             fill: var(--idle);
         }
-        .status_a423bd[style='background-color: rgb(204, 149, 76);'] {
+        .status_a423bd[style='background-color: rgb(202, 150, 84);'] {
             background-color: var(--idle) !important;
         }
-        rect[fill='#d83a41'],
-        .vc-platform-indicator > svg[fill='#d83a41'] {
+        rect[fill='#d83a42'],
+        .vc-platform-indicator > svg[fill='#d83a42'] {
             fill: var(--dnd);
         }
-        .status_a423bd[style='background-color: rgb(216, 58, 65);'] {
+        .status_a423bd[style='background-color: rgb(216, 58, 66);'] {
             background-color: var(--dnd) !important;
         }
         rect[fill='#9147ff'] {
@@ -1366,6 +1383,10 @@ body {
         .vcd-screen-picker-option-radio[data-checked='true'] .defaultColor__4bd52 {
             color: var(--text-0);
         }
+
+        .memberRowContainer__71c22.memberSelected__71c22 td {
+            background: var(--bg-3);
+        }
     }
 
     ::selection,
@@ -1377,7 +1398,7 @@ body {
 
 /* dms-button.css */
 body {
-    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
     --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
@@ -1469,10 +1490,14 @@ body {
     --custom-app-top-bar-height: var(--top-bar-height);
 }
 
-@property --modify-top-bar-buttons {
+@property --top-bar-button-position {
     syntax: 'off | hide | serverlist | titlebar';
     inherits: false;
-    initial-value: off;
+    initial-value: titlebar;
+}
+
+.platform-osx.visual-refresh .wrapper_ef3116 {
+    margin-top: max(0px, calc(36px - var(--top-bar-height)));
 }
 
 @container body style(--top-bar-button-position: hide) {
@@ -1494,7 +1519,7 @@ body {
         }
 
         /* make server list inner scroll */
-        .stack_dbd263 {
+        .stack_dbd263:not([id='guild-list-unread-dms']) {
             overflow: hidden scroll;
             scrollbar-width: none;
         }
@@ -1617,7 +1642,7 @@ body {
     .base_c48ade:has(.winButtons_c38106) .toolbar__9293f {
         padding-right: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
     }
-    .base_c48ade:has(.winButtons_c38106) .searchBar__1ac1c {
+    .base_c48ade:has(.winButtons_c38106) .search__1ac1c {
         margin-right: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
     }
     .base_c48ade:has(.trailing_c38106 > .button__85643) .toolbar__9293f {

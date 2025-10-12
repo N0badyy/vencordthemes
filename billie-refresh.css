@@ -29,6 +29,12 @@ body {
     /* panel separation */
 /*channel status img */
     /* --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 + 2px); */
+    .scroller__53543 {
+    /* background-color: var(--background-base-low); */
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
     .headerImage__08bd2 {
     background-image: none;
     height:0px;     

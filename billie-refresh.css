@@ -101,7 +101,7 @@ body {
     .sphere__11664 {
         opacity: 0%;
     }
-    .inner_c0bea0 biteSize_c0bea0 {
+    .inner_c0bea0 user-profile-popout {
         --background-surface-high: var(--bg-2);
     } 
     /* panel separation */
@@ -389,8 +389,8 @@ body {
     }
 
     /* remove excess backgrounds */
-    .wrapper__6c798 /* message loading placeholders */,
-    .wrapper__6c798 > .wrapper_fc8177 {
+    .wrapper_cdf8a9 /* message loading placeholders */,
+    .wrapper_cdf8a9 > .wrapper_fc8177 {
         background: none;
     }
     .page__5e434 > .chat_f75fb0 /* friend page, server members page */ {

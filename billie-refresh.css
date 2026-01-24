@@ -25,6 +25,10 @@ body {
     --border-hover-transition: 0.2s ease;
 }
 
+
+.pulseGradient__11664 {
+    display: none;
+}
 /* panel separation */
 .container__89463 > .toolbar__89463 /* server boosts titlebar */,
 .container__89463 > .contentContainer__89463 /* server boosts tab */,

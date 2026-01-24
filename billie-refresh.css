@@ -26,6 +26,10 @@ body {
 }
 
 /* panel separation */
+.canvas[style*="width: 446px"][style*="height: 1248px"] {
+  display: none !important;
+}
+
 .container__89463 > .toolbar__89463 /* server boosts titlebar */,
 .container__89463 > .contentContainer__89463 /* server boosts tab */,
 .guilds__5e434 /* server list */, 

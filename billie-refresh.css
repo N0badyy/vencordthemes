@@ -26,7 +26,7 @@ body {
 }
 
 /* panel separation */
-.canvas[style*="width: 446px"][style*="height: 1248px"] {
+canvas[style*="width: 446px"][style*="height: 1248px"] {
   display: none !important;
 }
 
